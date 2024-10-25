@@ -1,0 +1,199 @@
+:root {
+  --jaune: #f5b013;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("https://img.freepik.com/vecteurs-libre/fond-grunge-noir-jaune_1409-1587.jpg?t=st=1729802269~exp=1729805869~hmac=21ce915e9f77963a78e3b199c63f7ba4a01a1320076b78a92e68cd6c71c0c55f&w=1380");
+  background-size: 100%;
+  background-attachment: fixed;
+  font-family: "museo slab";
+  font-weight: bolder;
+}
+
+header {
+  font-family: "Anton", sans-serif;
+  text-align: center;
+  color: white;
+  background-color: black;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: auto;
+}
+
+.debut {
+  letter-spacing: 1px;
+  border-bottom-color: var(--jaune);
+  border-bottom-style: solid;
+  background-color: #1b1b1b;
+  padding: 0;
+}
+
+#logo {
+  z-index: 2;
+  height: 5rem;
+  width: auto;
+  margin-right: 1rem;
+  margin-top: 1rem;
+}
+
+#nom {
+  letter-spacing: 5px;
+  font-style: italic;
+  margin-top: -0.5rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: center;
+  margin-right: 27rem;
+  font-weight: 100;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+nav {
+  font-family: "museo slab";
+  margin-top: -1rem;
+  background-color: #f5b013;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+nav > a {
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  background-color: #f5b013;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+a:hover {
+  color: white;
+  background-color: black;
+}
+main {
+  background-color: rgb(255, 255, 255);
+  height: 100rem;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+#section1 {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.match {
+  color: white;
+  margin: 0;
+  font-size: 0.7rem;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  margin: 1rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  background-color: #000000;
+  border-radius: 30px;
+}
+.equipe {
+  margin-top: 3%;
+  height: 6rem;
+  width: 6rem;
+}
+.text-match {
+  margin-left: 5%;
+  margin-top: 2%;
+  text-align: center;
+  font-weight: 100;
+  margin-top: 1rem;
+}
+.score {
+  font-size: 1.5rem;
+  font-weight: 1000;
+}
+.detail {
+  margin-top: 2%;
+  font-weight: 100;
+}
+
+.lieu {
+  margin-top: 0.5rem;
+  padding-bottom: 1rem;
+  font-style: italic;
+}
+span {
+  color: white;
+  font-weight: 100;
+  font-size: 1rem !important;
+}
+
+@media (max-width: 768px) {
+  #nom {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  #logo {
+    height: 4rem;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  nav > a {
+    border-right: none;
+
+    margin: 0.5rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+#prochain {
+  color: white;
+  text-align: center;
+  margin-left: 1rem;
+  color: black;
+  border-radius: 30px;
+  background-color: #000000;
+  width: 30%;
+}
+#prochain div {
+  color: white;
+  display: flex;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+#prochain p {
+  font-size: 1rem;
+  color: white;
+}
+#prochain h2 {
+  color: white;
+}
