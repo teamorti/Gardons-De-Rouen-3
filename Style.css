@@ -1,0 +1,219 @@
+:root {
+  --jaune: #f5b013;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+@media (max-width: 768px) {
+  #nom {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0!important;
+
+  }
+
+  h1 {
+    font-size: 3vw!important;
+  }
+
+  h2 {
+    font-size: 1.2vw!important;
+  }
+
+  #logo {
+    height: 4vw!important;
+  }
+
+  nav {
+    flex-direction: column!important;
+  }
+
+  nav>a {
+    border-right: none!important;
+
+    margin: 0.5vw 0!important;
+  }
+
+  #section1 {
+    flex-wrap: wrap;
+
+  }
+  .match{
+    width: 50vw !important;
+    justify-content: center;
+
+  }
+
+  #section2 {
+      display: flex;
+      justify-content: center;
+  }
+    #prochain{
+      margin-left: 1rem;
+      width: 50vw!important;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2.5vw;
+  }
+}
+
+body {
+  width:100% ;
+  background-image: url("images/Fond.jpg");
+  background-size: 100%;
+  background-attachment: fixed;
+  font-family: "museo slab";
+  font-weight: bolder;
+}
+
+header {
+  font-family: "Anton", sans-serif;
+  text-align: center;
+  color: white;
+  background-color: black;
+}
+
+h2 {
+  font-size: 1.5vw;
+  margin-bottom: auto;
+}
+
+.debut {
+  border-bottom-color: var(--jaune);
+  border-bottom-style: solid;
+  background-color: #1b1b1b;
+  padding: 0;
+}
+
+#logo {
+  z-index: 2;
+  height: 5vw;
+  width: auto;
+  margin-right: 1vw;
+  margin-top: 1vw;
+}
+
+#nom {
+  font-style: italic;
+  margin-top: -0.5vw;
+  margin-bottom: 0.5vw;
+  display: flex;
+  justify-content: center;
+  margin-right: 27vw;
+  font-weight: 100;
+}
+
+h1 {
+  font-size: 4vw;
+}
+a{
+  font-size: 1vw;
+}
+nav {
+  font-family: "museo slab";
+  margin-top: -1vw;
+  background-color: #f5b013;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+nav > a {
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  background-color: #f5b013;
+  border-right: 0.1vw solid rgba(0, 0, 0, 0.1);
+  padding: 1vw;
+}
+
+a:hover {
+  color: white;
+  background-color: black;
+}
+main {
+  background-color: rgb(255, 255, 255);
+  margin-left: 20vw;
+  margin-right: 20vw;
+}
+#section1 {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+}
+.match {
+  color: black;
+  margin: 0;
+  font-size: 0.7vw;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  box-shadow: 1vw 1vw 1vw rgba(0, 0, 0, 0.2);
+  margin: 1vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  border-radius: 2vw;
+}
+.equipe {
+  margin-top: 3%;
+  height: 6vw;
+  width: 6vw;
+}
+.text-match {
+  margin-left: 5%;
+  margin-top: 2%;
+  text-align: center;
+  font-weight: 100;
+  margin-top: 1vw;
+}
+.score {
+  font-size: 1.5vw;
+  font-weight: 1000;
+}
+.detail {
+  margin-top: 2%;
+  font-weight: 100;
+}
+
+.lieu {
+  margin-top: 0.5vw;
+  padding-bottom: 1vw;
+  font-style: italic;
+}
+span {
+  color: black;
+  font-weight: 100;
+  font-size:0.7vw !important;
+}
+
+#prochain {
+  text-align: center;
+  margin-left: 1vw;
+  color: black;
+  border-radius: 2vw;
+  width: 20vw;
+  box-shadow: 1vw 1vw 1vw rgba(0, 0, 0, 0.2);
+
+}
+#prochain div {
+  color: black;
+  display: flex;
+  margin-bottom: 2vw;
+  align-items: center;
+}
+#prochain p {
+  margin-left: 1vw;
+  font-size: 1vw;
+  color: black;
+}
+#prochain h2 {
+  padding-top: 1vw;
+  color: black;
+}
