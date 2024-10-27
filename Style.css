@@ -191,6 +191,8 @@ main {
   padding-bottom: 1vw;
   font-style: italic;
 }
+
+
 span {
   color: #f5f5f5;
   font-weight: 100;
@@ -209,15 +211,14 @@ h2{
 
 
 #prochain {
-  background-color: var(--jaune) ;
+  background-color: var(--noir) ;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   text-align: center;
   margin-left: 2vw;
   border-radius: 2vw;
   width: 20vw;
-  box-shadow: 1vw 1vw 1vw rgba(0, 0, 0, 0.2);
-  border-style: solid;
-  border-color: var(--noir);
+  color: var(--jaune);
+  box-shadow: var(--jaune) 0vw 0vw 2vw;
 
 }
 #prochain div {
@@ -226,15 +227,20 @@ h2{
   align-items: center;
 }
 #prochain p {
-  margin-left: 1vw;
+  margin-left: 2vw;
   font-size: 1vw;
 }
 #prochain h2 {
   padding-top: 1vw;
 }
+
+
+
 .classement{
+  box-shadow: #f5b013 0vw 0vw 2vw;
   border-radius: 2vw;
   width: 30vw;
+  height: 20vw;
   margin-left: 6vw;
   background-color: var(--noir);
   color: var(--jaune);
@@ -242,24 +248,34 @@ h2{
 .classement h2{
   text-align: center;
 }
-.classement-equipe{
+#classement2{
   font-family: var(--font2);
-  border-top-style: solid;
-  border-color: var(--jaune);
-  padding-top: 1vw;
-  padding-bottom: 1vw;
   font-size: 1vw;
-  padding-left: 1vw;
-}
-#point{
-  display: flex;
-  margin-left: 8vw;
+  display: flex ;
+  width: auto;
 
 }
-#point p{
-  padding-right: 2vw;
+#place{
+  margin-top: 2.5vw;
+  margin-right: -3vw;
+  color: #ffde72;
+}
+#classement2 div{
   padding-left: 2vw;
-  font-size: 1vw;
-  font-family: var(--font2);
-  border-right-style: solid;
+  padding-right: 2vw;
+  border-bottom-style: solid;
+}
+#classement2 h3{
+  letter-spacing: 0.2vw;
+  margin-bottom: 1vw;
+}
+#classement2 p{
+  margin-bottom: 1vw;
+}
+#classement3{
+  display: flex;
+  font-size: 0.5vw;
+}
+#classement3 p{
+  margin-left: 2vw;
 }
