@@ -1,30 +1,15 @@
-document.addEventListener("DOMContentLoaded", function() {
-    // Récupérer les équipes et leurs points
-    const teams = Array.from(document.querySelectorAll('.team'));
-    
-    // Trier les équipes par points (décroissant)
-    teams.sort((a, b) => {
-        return b.dataset.points - a.dataset.points;
-    });
+const sliderContainer = document.querySelector('.slider-container');
+const matches = document.querySelectorAll('.match');
 
-    // Mettre à jour le DOM avec le nouvel ordre
-    const equipeContainer = document.getElementById('EQUIPE');
-    equipeContainer.innerHTML = '<h3>Equipe</h3>'; // Réinitialiser le conteneur
+sliderContainer.addEventListener('scroll', () => {
+  matches.forEach((match) => {
+    const rect = match.getBoundingClientRect();
+    const containerRect = sliderContainer.getBoundingClientRect();
 
-    teams.forEach((team, index) => {
-        const place = document.getElementById('place');
-        place.children[index].textContent = index + 1; // Mettre à jour la position
-        equipeContainer.appendChild(team);
-    });
-
-    // Mettre à jour les autres colonnes si nécessaire (ici, pour les points)
-    const ptsContainer = document.getElementById('pts');
-    ptsContainer.innerHTML = '<h3>PTS</h3>'; // Réinitialiser le conteneur
-
-    teams.forEach((team) => {
-        const points = team.dataset.points;
-        const p = document.createElement('p');
-        p.textContent = points;
-        ptsContainer.appendChild(p);
-    });
+    if (rect.right < containerRect.left || rect.left > containerRect.right) {
+      match.style.opacity = '0'; // Rendre transparent hors du conteneur
+    } else {
+      match.style.opacity = '1'; // Rendre visible à l'intérieur du conteneur
+    }
+  });
 });
