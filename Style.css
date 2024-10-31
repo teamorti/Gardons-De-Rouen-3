@@ -6,10 +6,67 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+}
+@media (max-width: 768px) {
+  #nom {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0!important;
+
+  }
+
+  h1 {
+    font-size: 3vw!important;
+  }
+
+  h2 {
+    font-size: 1.2vw!important;
+  }
+
+  #logo {
+    height: 4vw!important;
+  }
+
+  nav {
+    flex-direction: column!important;
+  }
+
+  nav>a {
+    border-right: none!important;
+
+    margin: 0.5vw 0!important;
+  }
+
+  #section1 {
+    flex-wrap: wrap;
+
+  }
+  .match{
+    width: 50vw !important;
+    justify-content: center;
+
+  }
+
+  #section2 {
+      display: flex;
+      justify-content: center;
+  }
+    #prochain{
+      margin-left: 1rem;
+      width: 50vw!important;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2.5vw;
+  }
 }
 
 body {
-  background-image: url("https://img.freepik.com/vecteurs-libre/fond-grunge-noir-jaune_1409-1587.jpg?t=st=1729802269~exp=1729805869~hmac=21ce915e9f77963a78e3b199c63f7ba4a01a1320076b78a92e68cd6c71c0c55f&w=1380");
+  width:100% ;
+  background-image: url("images/Fond.jpg");
   background-size: 100%;
   background-attachment: fixed;
   font-family: "museo slab";
@@ -24,12 +81,11 @@ header {
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.5vw;
   margin-bottom: auto;
 }
 
 .debut {
-  letter-spacing: 1px;
   border-bottom-color: var(--jaune);
   border-bottom-style: solid;
   background-color: #1b1b1b;
@@ -38,30 +94,31 @@ h2 {
 
 #logo {
   z-index: 2;
-  height: 5rem;
+  height: 5vw;
   width: auto;
-  margin-right: 1rem;
-  margin-top: 1rem;
+  margin-right: 1vw;
+  margin-top: 1vw;
 }
 
 #nom {
-  letter-spacing: 5px;
   font-style: italic;
-  margin-top: -0.5rem;
-  margin-bottom: 0.5rem;
+  margin-top: -0.5vw;
+  margin-bottom: 0.5vw;
   display: flex;
   justify-content: center;
-  margin-right: 27rem;
+  margin-right: 27vw;
   font-weight: 100;
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 4vw;
 }
-
+a{
+  font-size: 1vw;
+}
 nav {
   font-family: "museo slab";
-  margin-top: -1rem;
+  margin-top: -1vw;
   background-color: #f5b013;
   display: flex;
   flex-wrap: wrap;
@@ -73,8 +130,8 @@ nav > a {
   text-align: center;
   text-decoration: none;
   background-color: #f5b013;
-  border-right: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 1rem;
+  border-right: 0.1vw solid rgba(0, 0, 0, 0.1);
+  padding: 1vw;
 }
 
 a:hover {
@@ -83,44 +140,41 @@ a:hover {
 }
 main {
   background-color: rgb(255, 255, 255);
-  height: 100rem;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 20vw;
+  margin-right: 20vw;
 }
 #section1 {
   margin: 0;
   display: flex;
   justify-content: space-between;
-  flex-wrap: nowrap;
   justify-content: center;
 }
 .match {
-  color: white;
+  color: black;
   margin: 0;
-  font-size: 0.7rem;
+  font-size: 0.7vw;
   font-family: "Open Sans", sans-serif;
   display: flex;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
-  margin: 1rem;
-  margin-left: 5rem;
-  margin-right: 5rem;
-  background-color: #000000;
-  border-radius: 30px;
+  box-shadow: 1vw 1vw 1vw rgba(0, 0, 0, 0.2);
+  margin: 1vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  border-radius: 2vw;
 }
 .equipe {
   margin-top: 3%;
-  height: 6rem;
-  width: 6rem;
+  height: 6vw;
+  width: 6vw;
 }
 .text-match {
   margin-left: 5%;
   margin-top: 2%;
   text-align: center;
   font-weight: 100;
-  margin-top: 1rem;
+  margin-top: 1vw;
 }
 .score {
-  font-size: 1.5rem;
+  font-size: 1.5vw;
   font-weight: 1000;
 }
 .detail {
@@ -129,71 +183,37 @@ main {
 }
 
 .lieu {
-  margin-top: 0.5rem;
-  padding-bottom: 1rem;
+  margin-top: 0.5vw;
+  padding-bottom: 1vw;
   font-style: italic;
 }
 span {
-  color: white;
+  color: black;
   font-weight: 100;
-  font-size: 1rem !important;
-}
-
-@media (max-width: 768px) {
-  #nom {
-    flex-direction: column;
-    align-items: center;
-    margin-right: 0;
-  }
-
-  h1 {
-    font-size: 3rem;
-  }
-
-  h2 {
-    font-size: 1.2rem;
-  }
-
-  #logo {
-    height: 4rem;
-  }
-
-  nav {
-    flex-direction: column;
-  }
-
-  nav > a {
-    border-right: none;
-
-    margin: 0.5rem 0;
-  }
-}
-
-@media (max-width: 480px) {
-  h1 {
-    font-size: 2.5rem;
-  }
+  font-size:0.7vw !important;
 }
 
 #prochain {
-  color: white;
   text-align: center;
-  margin-left: 1rem;
+  margin-left: 1vw;
   color: black;
-  border-radius: 30px;
-  background-color: #000000;
-  width: 30%;
+  border-radius: 2vw;
+  width: 20vw;
+  box-shadow: 1vw 1vw 1vw rgba(0, 0, 0, 0.2);
+
 }
 #prochain div {
-  color: white;
+  color: black;
   display: flex;
-  margin-bottom: 2rem;
+  margin-bottom: 2vw;
   align-items: center;
 }
 #prochain p {
-  font-size: 1rem;
-  color: white;
+  margin-left: 1vw;
+  font-size: 1vw;
+  color: black;
 }
 #prochain h2 {
-  color: white;
+  padding-top: 1vw;
+  color: black;
 }
