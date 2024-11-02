@@ -4,23 +4,140 @@
   --font1: "museo slab";
   --font2: "Anton", sans-serif;
 }
-#collection1{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 1rem;
+h3{
+  margin-top: 2rem;
+  font-size: 2rem;
+  text-align: center;  
+  font-family: var(--font2);
+  font-style: italic;
+  margin-bottom: 2rem;
+  color: var(--noir);
+  text-shadow: var(--noir) 0 0 20px;}
+
+.collection1 img:hover,
+.collection2 img:hover{
+  box-shadow: var(--noir) 0 0 20px;
 }
-#collection1 img{
+.collection{
+  display: block;
+  flex-wrap: nowrap;
+  }
+
+
+
+.collection1 {
+  flex-wrap: nowrap;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  animation: defilement 17s linear infinite;
+  height: 300px;
+}
+
+.collection1 img {
   margin: 1rem;
-  width: 40%;
   border-radius: 2rem;
   transition: all 0.3s ease;
-    box-shadow: var(--jaune) 0 0 100px;
+  box-shadow: var(--jaune) 0 0 100px;
+  object-fit: cover;
 
 }
 
-#collection1 img:hover{
-  width: 44%;
-  height: auto;
-  box-shadow: var(--noir) 0 0 20px;
+.collection2{
+  height: 300px;
+  display: flex;
+  animation: defilement 12s linear reverse infinite;
+}
+
+.collection2 img {
+  margin: 1rem; 
+  object-fit: cover;
+  border-radius: 2rem;
+  transition: all 0.3s ease;
+  box-shadow: var(--jaune) 0 0 100px;
+
+}
+
+
+@keyframes defilement {
+    0% {
+      transform: translateX(0%);
+    }
+  
+    100% {
+      transform: translateX(-113vw);
+    }
+  }
+
+.flex {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+button{
+  font-size: 1rem;
+  padding: 10px;
+  position: absolute;
+  right: 21%;
+  border: none;
+  margin-top: -1rem;
+  border-radius: 5rem;
+  width: 10%;
+  transition: all 0.3s ease;
+  background-color: var(--noir);
+  color: var(--jaune);
+  box-shadow: var(--noir) 0 0 30px;
+
+}
+button:hover{
+  background-color: var(--jaune);
+  color: var(--noir);
+  box-shadow: var(--jaune) 0 0 30px;
+
+}
+iframe{
+  height: 100%;
+  border: none;
+}
+#reseaux{
+  margin-top: 3rem;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content:space-around;
+}
+#credit img{
+  width: 5%;
+  margin-right: 5rem;
+  margin-left: 5rem;
+  border-radius: 50rem;
+}
+.credit1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+#credit p{
+  font-size: 15px;
+  font-family: var(--font2);
+  font-weight: 100;
+}
+strong{
+  font-size: 20px;
+  font-family: var(--font2);
+  font-weight: 100;
+  font-style: italic;
+}
+#gardons{
+  border-radius: 0px!important;
+}
+.insta{
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.insta:hover{
+  width: 6%!important;
 }
