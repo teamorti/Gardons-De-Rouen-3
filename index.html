@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GARDONS DE ROUEN</title>
     <link rel="stylesheet" href="Style.css" />
+    <link rel="stylesheet" href="header.css" />
     <link
       rel="icon"
       type="image/png"
@@ -19,9 +20,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="header.css" />
-
-    <script src="script.js"></script>
-
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Titan+One&display=swap");
     </style>
@@ -29,6 +27,7 @@
 
   <body>
     <header>
+      <audio autoplay src="soulsweeper-252499.mp3"></audio>
       <div class="debut"><h2>CLUB DE HOCKEY LOISIR</h2></div>
 
       <div id="nom">
@@ -41,12 +40,12 @@
       </div>
 
       <nav>
-        <a href="index.html">ACCUEIL</a>
-        <a href="equipe.html">EQUIPE</a>
-        <a href="calendrier.html">CALENDRIER/RESULT.</a>
-        <a href="stats.html">STATS</a>
-        <a href="shop.html">SHOP</a>
-        <a href="media.html">MEDIA</a>
+        <a class="bouton" href="index.html">ACCUEIL</a>
+        <a class="bouton" href="equipe.html">EQUIPE</a>
+        <a class="bouton" href="calendrier.html">CALENDRIER/RESULT.</a>
+        <a class="bouton" href="stats.html">STATS</a>
+        <a class="bouton" href="shop.html">SHOP</a>
+        <a class="bouton" href="media.html">MEDIA</a>
       </nav>
     </header>
     <main>
@@ -76,7 +75,7 @@
               <strong>Louviers</strong>
             </p>
           </div>
-          <p>*horaire susceptible de changé</p>
+          <p id="change">*horaire susceptible de changé</p>
         </div>
         <div>
           <div class="classement">
@@ -136,60 +135,36 @@
               <p>Match perdu = 1pts</p>
             </div>
           </div>
-          <div id="reseaux">
-            <a href="https://www.instagram.com/gardonsderouen/"
-              ><img src="images/insta.png" alt=""
-            /></a>
-            <a href="https://www.facebook.com/gardonsderouen/?locale=fr_FR"
-              ><img src="images/facebook.png" alt=""
-            /></a>
-          </div>
         </div>
       </section>
-      <h2 id="resultat">DERNIER RESULTAT CHAMPIONNAT :</h2>
 
-      <section id="section1">
+      <h2 id="resultattitre">RESULTAT CHAMPIONNAT</h2>
+      <section id="resultat">
         <div class="match">
           <img class="equipe" id="equipe1" src="images/caen.png" alt="" />
           <div class="text-match">
             <p class="detail">
-              <span class="material-symbols-outlined">calendar_month</span>DIm.
-              13 octobre - 1er Journée
+              <span class="material-symbols-outlined">calendar_month</span>
+              Jeu. 10 octobre - 1er Journée
             </p>
             <h3 class="score">3 - 8</h3>
             <p class="detail">( - / - / - )</p>
             <p class="lieu">Caen</p>
           </div>
-
           <img class="equipe" id="equipe2" src="images/louviers.png" alt="" />
         </div>
 
         <div class="match">
-          <img class="equipe" id="equipe1" src="images/beauvais.png" alt="" />
-          <div class="text-match">
-            <p class="detail">
-              <span class="material-symbols-outlined">calendar_month</span>Dim.
-              13 octobre - 1er Journée
-            </p>
-            <h3 class="score">13 - 3</h3>
-            <p class="detail">( - / - / - )</p>
-            <p class="lieu">Beauvais</p>
-          </div>
-
-          <img class="equipe" id="equipe2" src="images/cleon.png" alt="" />
-        </div>
-        <div class="match">
           <img class="equipe" id="equipe1" src="images/louviers.png" alt="" />
           <div class="text-match">
             <p class="detail">
-              <span class="material-symbols-outlined">calendar_month</span>Sam.
-              20 octobre - 12h30 / 1er Journée
+              <span class="material-symbols-outlined">calendar_month</span>
+              Dim. 13 octobre - 1er Journée
             </p>
             <h3 class="score">1 - 9</h3>
-            <p class="detail">( 1-5 / 2-7 / 2-9 )</p>
-            <p class="lieu">Glacéo de Louviers</p>
+            <p class="detail">( - / - / - )</p>
+            <p class="lieu">Louviers</p>
           </div>
-
           <img
             class="equipe"
             id="equipe2"
@@ -197,6 +172,35 @@
             alt=""
           />
         </div>
+
+        <div class="match">
+          <img class="equipe" id="equipe1" src="images/beauvais.png" alt="" />
+          <div class="text-match">
+            <p class="detail">
+              <span class="material-symbols-outlined">calendar_month</span>
+              Sam. 12 octobre - 1er Journée
+            </p>
+            <h3 class="score">13 - 3</h3>
+            <p class="detail">( - / - / - )</p>
+            <p class="lieu">Beauvais</p>
+          </div>
+          <img class="equipe" id="equipe2" src="images/cleon.png" alt="" />
+        </div>
+
+        <div class="match">
+          <img class="equipe" id="equipe1" src="images/cleon.png" alt="" />
+          <div class="text-match">
+            <p class="detail">
+              <span class="material-symbols-outlined">calendar_month</span>
+              Dim. 27 octobre - 2er Journée
+            </p>
+            <h3 class="score">10 - 3</h3>
+            <p class="detail">( - / - / - )</p>
+            <p class="lieu">Cléon</p>
+          </div>
+          <img class="equipe" id="equipe2" src="images/louviers.png" alt="" />
+        </div>
+
         <div class="match">
           <img
             class="equipe"
@@ -206,24 +210,146 @@
           />
           <div class="text-match">
             <p class="detail">
-              <span class="material-symbols-outlined">calendar_month</span>Sam.
-              26 octobre - 12h00 / 2er Journée
+              <span class="material-symbols-outlined">calendar_month</span>
+              Sam. 26 octobre - 2er Journée
             </p>
             <h3 class="score">11 - 1</h3>
-            <p class="detail">( 5-0 / 8-1 / 11-1 )</p>
-            <p class="lieu">Patinoire de Rouen</p>
+            <p class="detail">( - / - / - )</p>
+            <p class="lieu">Rouen</p>
+          </div>
+          <img class="equipe" id="equipe2" src="images/caen.png" alt="" />
+        </div>
+        <div class="match">
+          <img class="equipe" id="equipe1" src="images/caen.png" alt="" />
+          <div class="text-match">
+            <p class="detail">
+              <span class="material-symbols-outlined">calendar_month</span>
+              Jeu. 10 octobre - 1er Journée
+            </p>
+            <h3 class="score">3 - 8</h3>
+            <p class="detail">( - / - / - )</p>
+            <p class="lieu">Caen</p>
+          </div>
+          <img class="equipe" id="equipe2" src="images/louviers.png" alt="" />
+        </div>
+
+        <div class="match">
+          <img class="equipe" id="equipe1" src="images/louviers.png" alt="" />
+          <div class="text-match">
+            <p class="detail">
+              <span class="material-symbols-outlined">calendar_month</span>
+              Dim. 13 octobre - 1er Journée
+            </p>
+            <h3 class="score">1 - 9</h3>
+            <p class="detail">( - / - / - )</p>
+            <p class="lieu">Louviers</p>
+          </div>
+          <img
+            class="equipe"
+            id="equipe2"
+            src="images/logo_gardons2-removebg-preview.png"
+            alt=""
+          />
+        </div>
+
+        <div class="match">
+          <img class="equipe" id="equipe1" src="images/beauvais.png" alt="" />
+          <div class="text-match">
+            <p class="detail">
+              <span class="material-symbols-outlined">calendar_month</span>
+              Sam. 12 octobre - 1er Journée
+            </p>
+            <h3 class="score">13 - 3</h3>
+            <p class="detail">( - / - / - )</p>
+            <p class="lieu">Beauvais</p>
+          </div>
+          <img class="equipe" id="equipe2" src="images/cleon.png" alt="" />
+        </div>
+
+        <div class="match">
+          <img class="equipe" id="equipe1" src="images/cleon.png" alt="" />
+          <div class="text-match">
+            <p class="detail">
+              <span class="material-symbols-outlined">calendar_month</span>
+              Dim. 27 octobre - 2er Journée
+            </p>
+            <h3 class="score">10 - 3</h3>
+            <p class="detail">( - / - / - )</p>
+            <p class="lieu">Cléon</p>
+          </div>
+          <img class="equipe" id="equipe2" src="images/louviers.png" alt="" />
+        </div>
+
+        <div class="match">
+          <img
+            class="equipe"
+            id="equipe1"
+            src="images/logo_gardons2-removebg-preview.png"
+            alt=""
+          />
+          <div class="text-match">
+            <p class="detail">
+              <span class="material-symbols-outlined">calendar_month</span>
+              Sam. 26 octobre - 2er Journée
+            </p>
+            <h3 class="score">11 - 1</h3>
+            <p class="detail">( - / - / - )</p>
+            <p class="lieu">Rouen</p>
           </div>
           <img class="equipe" id="equipe2" src="images/caen.png" alt="" />
         </div>
       </section>
 
-      <section>
-        <div id="presentation">
+      <section id="presentation">
+        <div id="container-pre">
+          <img id="banniere" src="images/banniere.jpg" alt="" />
           <img
-            src="https://www.hockeyrouen.com/images/edito/image/%5B%20Icones%20%5D/%5B%20Loisirs%20%5D/icone_loisirs_gardons.jpg"
+            onclick="window.location.href='https://www.instagram.com/gardonsderouen/';"
+            class="reseaux"
+            src="images/insta.png"
+            alt=""
+          />
+
+          <img
+            onclick="window.location.href='https://www.facebook.com/gardonsderouen/';"
+            class="reseaux"
+            src="images/facebook.png"
+            alt=""
+          />
+
+          <img
+            onclick="window.location.href='https://x.com/DragonsdeRouen';"
+            class="reseaux"
+            src="images/twitter.png"
             alt=""
           />
         </div>
+        <div id="para">
+          <p>
+            "Les Gardons de Rouen est l'équipe loisir débutante de hockey sur
+            glace de Rouen. Cette section existe depuis 10 ans. Nous tentons de
+            faire découvrir et partager aux débutants notre passion commune pour
+            ce sport. Nous travaillons divers aspects comme le perfectionnement
+            du patinage, le positionnement sur la glace, nous essayons de
+            travailler sur différents exercices pour éviter la routine. Nous
+            participons à des matchs ainsi qu'à des tournois tout au long de la
+            saison afin de pouvoir rencontrer d'autres aficionados de ce sport
+            qui ont passé le pas de la pratique. Vous voulez sauter le pas? Pas
+            de prérequis particulier, une simple pratique du patinage est
+            demandée, afin de pouvoir profiter à fond. En tout cas, la bonne
+            humeur est de mise dans cette équipe, fou rire garanti."
+          </p>
+
+          <h2>Horaires d'entrainements :</h2>
+          <p id="horaire">Lundi (21h45 - 22h45) & Vendredi (21h45 - 22h45)</p>
+          <p>
+            Pour postuler :
+            <a href="mailto:contact@char76.fr"> contact@char76.fr</a>
+          </p>
+        </div>
+      </section>
+
+      <section>
         <p id="footer">
           ⒸGardons de Rouen - 2024 - Club de Hockey sur glace loisir
         </p>

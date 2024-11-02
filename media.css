@@ -1,0 +1,26 @@
+:root {
+  --jaune: #f5b013;
+  --noir: #1e1e1e;
+  --font1: "museo slab";
+  --font2: "Anton", sans-serif;
+}
+#collection1{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1rem;
+}
+#collection1 img{
+  margin: 1rem;
+  width: 40%;
+  border-radius: 2rem;
+  transition: all 0.3s ease;
+    box-shadow: var(--jaune) 0 0 100px;
+
+}
+
+#collection1 img:hover{
+  width: 44%;
+  height: auto;
+  box-shadow: var(--noir) 0 0 20px;
+}

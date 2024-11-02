@@ -1,128 +1,129 @@
 :root {
-    --jaune: #f5b013;
-    --noir: #1e1e1e;
+  --jaune: #f5b013;
+  --noir: #1e1e1e;
 
-
-    --font2: "Anton", sans-serif;
+  --font2: "Anton", sans-serif;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 @media (max-width: 768px) {
-    #nom {
-        flex-direction: column;
-        align-items: center;
-        margin-right: 0 !important;
+  #nom {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0 !important;
+  }
 
-    }
+  h1 {
+    font-size: 3vw !important;
+  }
 
-    h1 {
-        font-size: 3vw !important;
-    }
+  h2 {
+    font-size: 1.2vw !important;
+  }
 
-    h2 {
-        font-size: 1.2vw !important;
-    }
+  #logo {
+    height: 4vw !important;
+  }
 
-    #logo {
-        height: 4vw !important;
-    }
+  nav {
+    flex-direction: column !important;
+  }
 
-    nav {
-        flex-direction: column !important;
-    }
+  nav > a {
+    border-right: none !important;
 
-    nav>a {
-        border-right: none !important;
-
-        margin: 0.5vw 0 !important;
-    }
+    margin: 0.5vw 0 !important;
+  }
 }
 
 @media (max-width: 480px) {
-    h1 {
-        font-size: 2.5vw;
-    }
+  h1 {
+    font-size: 2.5vw;
+  }
 }
 
 body {
-    width: 100%;
-    background-image: url("images/Fond.jpg");
-    background-size: 100%;
-    background-attachment: fixed;
-    font-family: "museo slab";
-    font-weight: bolder;
+  width: 100%;
+  background-image: url("images/Fond.jpg");
+  background-size: 100%;
+  background-attachment: fixed;
+  font-family: "museo slab";
+  font-weight: bolder;
 }
 
 header {
-    font-family: "Anton", sans-serif;
-    text-align: center;
-    color: white;
-    background-color: black;
+  font-family: "Anton", sans-serif;
+  text-align: center;
+  color: white;
+  background-color: black;
+  position: sticky;
+  top: -16.5%;
 }
 
 h2 {
-    font-size: 1.5vw;
-    margin-bottom: auto;
+  font-size: 1.5vw;
+  margin-bottom: auto;
 }
 
 .debut {
-    border-bottom-color: var(--jaune);
-    border-bottom-style: solid;
-    background-color: #1b1b1b;
-    padding: 0;
+  border-bottom-color: var(--jaune);
+  border-bottom-style: solid;
+  background-color: #1b1b1b;
+  padding: 0;
 }
 
 #logo {
-    z-index: 2;
-    height: 5vw;
-    width: auto;
-    margin-right: 1vw;
-    margin-top: 1vw;
+  z-index: 2;
+  height: 5vw;
+  width: auto;
+  margin-right: 1vw;
+  margin-top: 1vw;
 }
 
 #nom {
-    font-style: italic;
-    margin-top: -0.5vw;
-    margin-bottom: 0.5vw;
-    display: flex;
-    justify-content: center;
-    margin-right: 27vw;
-    font-weight: 100;
+  font-style: italic;
+  margin-top: -0.5vw;
+  margin-bottom: 0.5vw;
+  display: flex;
+  justify-content: center;
+  margin-right: 27vw;
+  font-weight: 100;
 }
 
 h1 {
-    font-size: 4vw;
+  font-size: 4vw;
 }
 
 a {
-    font-size: 1vw;
+  font-size: 1vw;
 }
 
 nav {
-    font-family: "museo slab";
-    margin-top: -1vw;
-    background-color: #f5b013;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  font-family: "museo slab";
+  margin-top: -1vw;
+  background-color: #f5b013;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: sticky;
+  top: 0px;
 }
 
-nav>a {
-    color: black;
-    text-align: center;
-    text-decoration: none;
-    background-color: #f5b013;
-    border-right: 0.1vw solid rgba(0, 0, 0, 0.1);
-    padding: 1vw;
+nav > a {
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  background-color: #f5b013;
+  border-right: 0.1vw solid rgba(0, 0, 0, 0.1);
+  padding: 1vw;
 }
 
 a:hover {
-    color: white;
-    background-color: black;
+  color: white;
+  background-color: black;
 }
